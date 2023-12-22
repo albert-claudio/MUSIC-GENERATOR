@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Gen</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Music Generator</h1>
+        <p>Descreva sua instrução para gerar músicas com IA ou coloque 
+        um arquivo pequeno de uma música de no máximo 10 Segundos. Por exemplo: 
+        'Uma música pop de condução dos anos 80 com batidas intensas e pads sintetizados ao fundo.'
+        Mas tem que ser <span>Em Inglês</span>.
+    </p>
+        <form class="gen-form">
+        <input type="text" id="user-prompt" , placeholder="Escreva seu prompt..." autocomplete="off">
+        <button type="button" id="generate">Generate</button>
+        <div class="files">
+        <input type="file" id="audio-file" accept="audio/aac,audio/midi,audio/mpeg,audio/ogg,audio/wav,
+        audio/x-wav,audio/opus,audio/webm,audio/flac,audio/vnd.rn-realaudio,audio/x-ms-wma,
+        audio/x-aiff,audio/amr,audio/*"></div>
+        </form>
+        <div class="result">
+            <div id="loading">Generating...</div>
+            <audio controls id="generated-audio">
+                Your browser does not support the audio element.
+              </audio>
+        </div>  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

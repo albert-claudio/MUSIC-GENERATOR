@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+body {
+    background: linear-gradient(150deg, #3498db, #9b59b6);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  ::before {
+    content: "";
+    background: inherit;
+    filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+ 
+  .container {
+    width: 50%;
+    margin: 50px auto;
+    color: white;
+    background: linear-gradient(135deg, #9b59b6, #e74c3c);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container p span {
+    font-weight: 600;
+}
+
+.gen-form {
+    margin-top: 20px;
+}
+
+#user-prompt {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#generate {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate:hover {
+    background-color: #9b59b6;
+}
+.files {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0 10px; /* Adiciona um pequeno espaçamento para o interior do .files */
+}
+
+.files button {
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#generate {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#generate:hover {
+    background-color: #9b59b6;
+}
+
+#loading {
+ display: none;
+font-size: 18px;
+font-weight: 600;
+}
+
+button:disabled, button[disabled]{
+    border: 1px solid #999;
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#user-prompt {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+#generated-audio {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px; /* Defina a largura máxima conforme desejado */
+  }
